@@ -1,2 +1,5 @@
 [general]
 import = ["~/.config/alacritty/rose-pine-moon.toml"]
+
+[window]
+opacity = 0.9
