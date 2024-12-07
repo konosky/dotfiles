@@ -1,0 +1,2 @@
+[general]
+import = ["~/.config/alacritty/rose-pine-moon.toml"]
