@@ -30,7 +30,8 @@ window#waybar.solo {
 #cpu,
 #memory,
 #network,
-#pulseaudio {
+#pulseaudio,
+#tray {
     padding: 0 26px;
 }
 
@@ -80,6 +81,11 @@ window#waybar.solo {
     color: @love;
     font-style: italic;
     font-weight: bold;
+}
+
+#tray {
+    background-color: @base;
+    border: @text 2px solid;
 }
 
 .module {
