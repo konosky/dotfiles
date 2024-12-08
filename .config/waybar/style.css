@@ -31,7 +31,8 @@ window#waybar.solo {
 #memory,
 #network,
 #pulseaudio,
-#tray {
+#tray,
+#custom-player {
     padding: 0 26px;
 }
 
@@ -86,6 +87,14 @@ window#waybar.solo {
 #tray {
     background-color: @base;
     border: @text 2px solid;
+}
+
+#custom-player {
+    background-color: @base;
+    border: @text 2px solid;
+    color: @text;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .module {

@@ -9,6 +9,7 @@
     "modules-left": [
     ],
     "modules-center": [
+        "custom/player",
         "pulseaudio",
         "network",
         "cpu",
@@ -94,5 +95,10 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/player": {
+        "exec": "~/.config/waybar/scripts/player.sh",
+        "format": "{} ",
+        "interval": 1
     }
 }
