@@ -2,6 +2,7 @@
 import = ["~/.config/alacritty/rose-pine-moon.toml"]
 
 [window]
+padding = { x = 8, y = 8 }
 opacity = 0.9
 
 [font]
