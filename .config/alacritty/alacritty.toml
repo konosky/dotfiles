@@ -3,3 +3,6 @@ import = ["~/.config/alacritty/rose-pine-moon.toml"]
 
 [window]
 opacity = 0.9
+
+[font]
+normal = { family = "VictorMono Nerd Font", style = "Regular" }
