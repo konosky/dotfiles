@@ -16,4 +16,8 @@ return {
       { "<Leader>g", "<Cmd>LazyGit<CR>", desc = "LazyGit" },
     },
   },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = true,
+  },
 }
