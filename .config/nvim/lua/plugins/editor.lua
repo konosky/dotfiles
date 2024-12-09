@@ -4,6 +4,9 @@ vim.o.expandtab = true
 
 vim.o.undofile = true
 
+vim.o.number = true
+vim.o.relativenumber = true
+
 vim.g.mapleader = " "
 
 vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true })
