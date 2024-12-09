@@ -56,4 +56,8 @@ return {
     },
     opts = {},
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+  },
 }
