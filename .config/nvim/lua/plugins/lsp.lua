@@ -11,6 +11,18 @@ return {
 
       require("mason-lspconfig").setup_handlers({
         function(server_name)
+          if server_name == "lua_ls" then
+            require("lspconfig").lua_ls.setup({
+              settings = {
+                Lua = {
+                  workspace = {
+                    library = { vim.env.VIMRUNTIME },
+                  },
+                },
+              },
+            })
+            return
+          end
           require("lspconfig")[server_name].setup({})
         end,
       })
