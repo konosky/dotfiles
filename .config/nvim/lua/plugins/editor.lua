@@ -59,5 +59,19 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
+    config = function()
+      local parsers = require("nvim-treesitter.parsers")
+
+      function _G.treesitter_automatic_parser_setup()
+        local lang = parsers.get_buf_lang()
+        if parsers.get_parser_configs()[lang] and not parsers.has_parser(lang) then
+          vim.schedule_wrap(function()
+            vim.cmd("TSInstall " .. lang)
+          end)()
+        end
+      end
+
+      vim.cmd("autocmd FileType * :lua treesitter_automatic_parser_setup()")
+    end,
   },
 }
