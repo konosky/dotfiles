@@ -96,7 +96,11 @@ return {
     dependencies = {
       { "nvim-tree/nvim-web-devicons" },
     },
-    opts = {},
+    opts = {
+      config = {
+        project = { action = function() vim.cmd("FzfLua files") end },
+      },
+    },
   },
   {
     "akinsho/bufferline.nvim",
