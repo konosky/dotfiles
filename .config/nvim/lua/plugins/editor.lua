@@ -9,7 +9,7 @@ vim.o.relativenumber = true
 
 vim.g.mapleader = " "
 
-vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true })
+vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
 return {
   {
