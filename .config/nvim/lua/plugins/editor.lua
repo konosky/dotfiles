@@ -10,4 +10,8 @@ return {
     event = "InsertEnter",
     config = true,
   },
+  {
+    "pocco81/auto-save.nvim",
+    config = true,
+  },
 }
