@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "$(playerctl metadata title) - $(playerctl metadata artist)"
+if playerctl status &> /dev/null; then
+  echo "$(playerctl metadata title) - $(playerctl metadata artist)"
+fi
