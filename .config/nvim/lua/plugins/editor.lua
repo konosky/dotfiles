@@ -46,7 +46,14 @@ return {
         vim.api.nvim_set_hl(0, "RainbowIris", { fg = palette.iris })
       end)
 
-      require("ibl").setup({ indent = { highlight = highlight } })
+      require("ibl").setup({
+        indent = { highlight = highlight },
+        exclude = {
+          filetypes = {
+            "dashboard",
+          },
+        },
+      })
     end,
   },
   {
