@@ -83,4 +83,12 @@ return {
       vim.cmd("autocmd FileType * :lua treesitter_automatic_parser_setup()")
     end,
   },
+  {
+    "nvimdev/dashboard-nvim",
+    event = "VimEnter",
+    dependencies = {
+      { "nvim-tree/nvim-web-devicons" },
+    },
+    opts = {},
+  },
 }
