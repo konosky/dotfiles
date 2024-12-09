@@ -21,4 +21,9 @@ return {
     "pocco81/auto-save.nvim",
     config = true,
   },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    config = true,
+  },
 }
