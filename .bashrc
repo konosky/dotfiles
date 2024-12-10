@@ -20,3 +20,4 @@ eval "$(zoxide init bash)"
 
 # Aliases
 alias find=fd
+alias cd=z
