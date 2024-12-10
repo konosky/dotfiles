@@ -11,6 +11,15 @@ vim.g.mapleader = " "
 
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
+vim.api.nvim_create_autocmd("VimEnter", {
+  group = vim.api.nvim_create_augroup("lazy_automatic_update", { clear = true }),
+  callback = function()
+    if require("lazy.status").has_updates then
+      require("lazy").update({ show = false })
+    end
+  end,
+})
+
 return {
   {
     "windwp/nvim-autopairs",
