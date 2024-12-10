@@ -25,3 +25,4 @@ alias top=btm
 alias cat=bat
 alias grep=rg
 alias ls=lsd
+alias diff=delta
