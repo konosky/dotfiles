@@ -23,3 +23,4 @@ alias find=fd
 alias cd=z
 alias top=btm
 alias cat=bat
+alias grep=rg
