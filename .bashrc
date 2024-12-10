@@ -17,3 +17,6 @@ export GOPATH="${HOME}/go"
 export PATH="${PATH}:${GOPATH}/bin"
 export PATH="${HOME}/.local/bin:${PATH}"
 eval "$(zoxide init bash)"
+
+# Aliases
+alias find=fd
