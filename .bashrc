@@ -24,3 +24,4 @@ alias cd=z
 alias top=btm
 alias cat=bat
 alias grep=rg
+alias ls=lsd
