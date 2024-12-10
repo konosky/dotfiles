@@ -27,3 +27,4 @@ alias grep=rg
 alias ls=lsd
 alias diff=delta
 alias ping=gping
+alias xxd=hexyl
