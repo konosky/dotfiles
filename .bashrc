@@ -30,3 +30,4 @@ alias diff=delta
 alias ping=gping
 alias xxd=hexyl
 alias du=dust
+alias sed=sd
