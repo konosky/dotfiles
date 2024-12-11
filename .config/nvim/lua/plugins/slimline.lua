@@ -1,6 +1,6 @@
 return {
-  {
-    "sschleemilch/slimline.nvim",
-    opts = {},
-  }
+	{
+		"sschleemilch/slimline.nvim",
+		opts = {},
+	},
 }
