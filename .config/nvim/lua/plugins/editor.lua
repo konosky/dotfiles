@@ -127,6 +127,9 @@ return {
 		"folke/which-key.nvim",
 		event = "VeryLazy",
 		opts = {},
+		keys = {
+			{ "<Leader>q", "<Cmd>q<CR>", desc = "Quit" },
+		},
 	},
 	{
 		"stevearc/conform.nvim",
