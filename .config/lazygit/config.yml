@@ -5,5 +5,5 @@ git:
 customCommands:
   - key: O
     context: files
-    command: oco
+    command: env OCO_GITPUSH=false oco --yes
     subprocess: true
