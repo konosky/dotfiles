@@ -147,4 +147,12 @@ return {
 		"VidocqH/lsp-lens.nvim",
 		opts = {},
 	},
+	{
+		"chikko80/error-lens.nvim",
+		event = "BufRead",
+		dependencies = {
+			"nvim-telescope/telescope.nvim",
+		},
+		opts = {},
+	},
 }
