@@ -124,4 +124,8 @@ return {
     event = "VeryLazy",
     opts = {},
   },
+  {
+    "stevearc/conform.nvim",
+    opts = {},
+  },
 }
