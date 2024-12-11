@@ -93,4 +93,12 @@ return {
 		"zbirenbaum/copilot-cmp",
 		config = true,
 	},
+	{
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		opts = {
+			ensure_installed = {
+				"stylua",
+			},
+		},
+	},
 }
