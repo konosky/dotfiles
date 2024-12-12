@@ -7,6 +7,8 @@ vim.o.undofile = true
 vim.o.number = true
 vim.o.relativenumber = true
 
+vim.o.cursorline = true
+
 vim.g.mapleader = " "
 
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
