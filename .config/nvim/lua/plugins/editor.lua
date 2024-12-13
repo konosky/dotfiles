@@ -146,6 +146,7 @@ return {
 		opts = {},
 		keys = {
 			{ "<Leader>q", "<Cmd>q<CR>", desc = "Quit" },
+			{ "<Leader>Q", "<Cmd>qall<CR>", desc = "Quit all" },
 
 			{ "<Leader>b", group = "Buffer" },
 
