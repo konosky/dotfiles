@@ -1,0 +1,2 @@
+#!/bin/bash
+exec xargs /usr/bin/spotify "${@}" < <(grep -Fv -- --gtk-version=4 < ~/.config/chromium-flags.conf)

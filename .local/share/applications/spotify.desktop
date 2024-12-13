@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Spotify
+GenericName=Music Player
+Icon=spotify-client
+TryExec=/bin/bash
+Exec=/bin/bash -c "${HOME}/.local/bin/spotify --uri=%U"
+Terminal=false
+MimeType=x-scheme-handler/spotify;
+Categories=Audio;Music;Player;AudioVideo;
+StartupWMClass=spotify
