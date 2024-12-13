@@ -14,6 +14,11 @@ return {
 		},
 		keys = {
 			{ "<Leader>g", "<Cmd>LazyGit<CR>", desc = "LazyGit" },
+			{
+				"<Leader>G",
+				'<Cmd>lua require("FTerm"):new({ cmd = "git add -A && env OCO_GITPUSH=false oco --yes; echo exit && read -s -n 1" }):open()<CR>',
+				desc = "OpenCommit",
+			},
 		},
 	},
 	{
