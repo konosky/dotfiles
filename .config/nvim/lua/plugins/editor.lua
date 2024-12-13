@@ -149,6 +149,9 @@ return {
 
 			{ "<Leader>bp", "<Cmd>bprevious<CR>", desc = "Previous" },
 			{ "<Leader>bn", "<Cmd>bnext<CR>", desc = "Next" },
+
+			{ "<Leader>bh", "<Cmd>split<CR>", desc = "Split horizontal" },
+			{ "<Leader>bv", "<Cmd>vsplit<CR>", desc = "Split vertical" },
 		},
 	},
 	{
