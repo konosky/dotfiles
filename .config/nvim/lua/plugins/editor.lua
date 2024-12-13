@@ -13,6 +13,14 @@ vim.g.mapleader = " "
 
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
+vim.keymap.set("i", "<C-b>", "<Left>", { noremap = true })
+vim.keymap.set("i", "<C-n>", "<Down>", { noremap = true })
+vim.keymap.set("i", "<C-p>", "<Up>", { noremap = true })
+vim.keymap.set("i", "<C-f>", "<Right>", { noremap = true })
+
+vim.keymap.set("i", "<C-a>", "<Home>", { noremap = true })
+vim.keymap.set("i", "<C-a>", "<End>", { noremap = true })
+
 vim.api.nvim_create_autocmd("VimEnter", {
 	group = vim.api.nvim_create_augroup("lazy_automatic_update", { clear = true }),
 	callback = function()
