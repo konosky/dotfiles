@@ -154,6 +154,8 @@ return {
 
 			{ "<Leader>bh", "<Cmd>split<CR>", desc = "Split horizontal" },
 			{ "<Leader>bv", "<Cmd>vsplit<CR>", desc = "Split vertical" },
+
+			{ "<Leader>w", "<Cmd>write<CR>", desc = "Write" },
 		},
 	},
 	{
