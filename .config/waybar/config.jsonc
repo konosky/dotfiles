@@ -15,6 +15,7 @@
         "cpu",
         "memory",
         "battery",
+        "backlight",
         "clock",
         "tray"
     ],
@@ -52,6 +53,11 @@
     },
     "memory": {
         "format": "{}% "
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "states": {

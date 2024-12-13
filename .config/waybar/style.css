@@ -29,6 +29,7 @@ window#waybar.solo {
 #battery,
 #cpu,
 #memory,
+#backlight,
 #network,
 #pulseaudio,
 #tray,
@@ -64,6 +65,14 @@ window#waybar.solo {
     background-color: @base;
     border: @pine 2px solid;
     color: @pine;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#backlight {
+    background-color: @base;
+    border: @text 2px solid;
+    color: @text;
     font-style: italic;
     font-weight: bold;
 }
