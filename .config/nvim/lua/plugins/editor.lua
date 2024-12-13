@@ -205,4 +205,9 @@ return {
 			vim.keymap.set("t", "<C-Tab>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 		end,
 	},
+	{
+		"nvim-focus/focus.nvim",
+		version = false,
+		config = true,
+	},
 }
