@@ -144,6 +144,11 @@ return {
 		opts = {},
 		keys = {
 			{ "<Leader>q", "<Cmd>q<CR>", desc = "Quit" },
+
+			{ "<Leader>b", group = "Buffer" },
+
+			{ "<Leader>bp", "<Cmd>bprevious<CR>", desc = "Previous" },
+			{ "<Leader>bn", "<Cmd>bnext<CR>", desc = "Next" },
 		},
 	},
 	{
