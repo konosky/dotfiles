@@ -12,6 +12,9 @@ vim.api.nvim_create_autocmd("VimEnter", {
 
 		vim.o.cursorline = true
 
+		vim.o.list = true
+		vim.o.listchars = "tab:▎ ,trail:-,nbsp:+"
+
 		vim.g.mapleader = " "
 
 		vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
