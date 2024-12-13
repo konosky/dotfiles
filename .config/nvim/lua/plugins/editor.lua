@@ -168,6 +168,14 @@ return {
 
 			{ "<Leader>w", "<Cmd>write<CR>", desc = "Write" },
 
+			{ "<Leader>p", "<Cmd>bprevious<CR>", desc = "Previous" },
+			{ "<Leader>n", "<Cmd>bnext<CR>", desc = "Next" },
+
+			{ "<Leader>s", "<Cmd>split<CR>", desc = "Split horizontal" },
+			{ "<Leader>S", "<Cmd>vsplit<CR>", desc = "Split vertical" },
+
+			{ "<Leader>d", "<Cmd>bdelete<CR>", desc = "Delete" },
+
 			{ "<Leader>h", "<C-w>h", desc = "Left" },
 			{ "<Leader>j", "<C-w>j", desc = "Down" },
 			{ "<Leader>k", "<C-w>k", desc = "Up" },
