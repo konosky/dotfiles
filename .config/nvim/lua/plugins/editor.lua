@@ -167,6 +167,11 @@ return {
 			{ "<Leader>bl", "<C-w>l", desc = "Right" },
 
 			{ "<Leader>w", "<Cmd>write<CR>", desc = "Write" },
+
+			{ "<Leader>h", "<C-w>h", desc = "Left" },
+			{ "<Leader>j", "<C-w>j", desc = "Down" },
+			{ "<Leader>k", "<C-w>k", desc = "Up" },
+			{ "<Leader>l", "<C-w>l", desc = "Right" },
 		},
 	},
 	{
