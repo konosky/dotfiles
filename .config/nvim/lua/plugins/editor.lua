@@ -1,25 +1,30 @@
-vim.o.tabstop = 2
-vim.o.shiftwidth = 2
-vim.o.expandtab = true
+vim.api.nvim_create_autocmd("VimEnter", {
+	group = vim.api.nvim_create_augroup("editor_config", { clear = true }),
+	callback = function()
+		vim.o.tabstop = 2
+		vim.o.shiftwidth = 2
+		vim.o.expandtab = true
 
-vim.o.undofile = true
+		vim.o.undofile = true
 
-vim.o.number = true
-vim.o.relativenumber = true
+		vim.o.number = true
+		vim.o.relativenumber = true
 
-vim.o.cursorline = true
+		vim.o.cursorline = true
 
-vim.g.mapleader = " "
+		vim.g.mapleader = " "
 
-vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
+		vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
 
-vim.keymap.set("i", "<C-b>", "<Left>", { noremap = true })
-vim.keymap.set("i", "<C-n>", "<Down>", { noremap = true })
-vim.keymap.set("i", "<C-p>", "<Up>", { noremap = true })
-vim.keymap.set("i", "<C-f>", "<Right>", { noremap = true })
+		vim.keymap.set("i", "<C-b>", "<Left>", { noremap = true })
+		vim.keymap.set("i", "<C-n>", "<Down>", { noremap = true })
+		vim.keymap.set("i", "<C-p>", "<Up>", { noremap = true })
+		vim.keymap.set("i", "<C-f>", "<Right>", { noremap = true })
 
-vim.keymap.set("i", "<C-a>", "<Home>", { noremap = true })
-vim.keymap.set("i", "<C-a>", "<End>", { noremap = true })
+		vim.keymap.set("i", "<C-a>", "<Home>", { noremap = true })
+		vim.keymap.set("i", "<C-e>", "<End>", { noremap = true })
+	end,
+})
 
 vim.api.nvim_create_autocmd("VimEnter", {
 	group = vim.api.nvim_create_augroup("lazy_automatic_update", { clear = true }),
