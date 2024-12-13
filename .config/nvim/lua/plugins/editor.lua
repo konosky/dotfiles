@@ -15,6 +15,8 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		vim.o.list = true
 		vim.o.listchars = "tab:▎ ,trail:·,nbsp:+,eol:↵,space:·,extends:»,precedes:«"
 
+		vim.o.clipboard = "unnamedplus"
+
 		vim.g.mapleader = " "
 
 		vim.keymap.set("i", "jj", "<Esc>", { noremap = true })
