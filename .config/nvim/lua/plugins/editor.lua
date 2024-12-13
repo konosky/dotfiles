@@ -13,7 +13,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		vim.o.cursorline = true
 
 		vim.o.list = true
-		vim.o.listchars = "tab:▎ ,trail:-,nbsp:+"
+		vim.o.listchars = "tab:▎ ,trail:·,nbsp:+,eol:↵,space:·,extends:»,precedes:«"
 
 		vim.g.mapleader = " "
 
