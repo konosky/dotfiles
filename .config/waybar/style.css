@@ -7,7 +7,9 @@
 }
 
 window#waybar {
-    background-color: #000000;
+    background: linear-gradient(217deg, rgba(156, 207, 216, 0.8), rgba(156, 207, 216, 0) 70.71%),
+        linear-gradient(127deg, rgba(196, 167, 231, 0.8), rgba(196, 167, 231, 0) 70.71%),
+        linear-gradient(336deg, rgba(49, 116, 143, 0.8), rgba(49, 116, 143, 0) 70.71%);
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -34,96 +36,164 @@ window#waybar.solo {
 #pulseaudio,
 #tray,
 #idle_inhibitor,
-#custom-player {
+#custom-player,
+#custom-pomo {
     padding: 0 26px;
 }
 
 #clock {
-    background-color: @base;
-    border: @iris 2px solid;
-    color: @iris;
+    background-color: rgba(224, 222, 244, 0.1);
+    color: @text;
     font-style: italic;
     font-weight: bold;
 }
 
 #battery {
-    background-color: @base;
-    border: @foam 2px solid;
+    background-color: rgba(156, 207, 216, 0.1);
     color: @foam;
     font-style: italic;
     font-weight: bold;
 }
 
 #cpu {
-    background-color: @base;
-    border: @rose 2px solid;
-    color: @rose;
+    background-color: rgba(156, 207, 216, 0.1);
+    color: @foam;
     font-style: italic;
     font-weight: bold;
 }
 
 #memory {
-    background-color: @base;
-    border: @pine 2px solid;
-    color: @pine;
+    background-color: rgba(156, 207, 216, 0.1);
+    color: @foam;
     font-style: italic;
     font-weight: bold;
 }
 
 #backlight {
-    background-color: @base;
-    border: @text 2px solid;
-    color: @text;
+    background-color: rgba(156, 207, 216, 0.1);
+    color: @foam;
     font-style: italic;
     font-weight: bold;
 }
 
 #network {
-    background-color: @base;
-    border: @gold 2px solid;
-    color: @gold;
+    background-color: rgba(196, 167, 231, 0.1);
+    color: @iris;
     font-style: italic;
     font-weight: bold;
+}
+
+#network.disconnected {
+    background-color: rgba(110, 106, 134, 0.1);
+    color: @muted;
 }
 
 #pulseaudio {
-    background-color: @base;
-    border: @love 2px solid;
-    color: @love;
+    background-color: rgba(196, 167, 231, 0.1);
+    color: @iris;
     font-style: italic;
     font-weight: bold;
+}
+
+#pulseaudio.muted {
+    background-color: rgba(110, 106, 134, 0.1);
+    color: @muted;
 }
 
 #tray {
-    background-color: @base;
-    border: @text 2px solid;
+    background-color: rgba(224, 222, 244, 0.5);
 }
 
 #idle_inhibitor {
-    background-color: @base;
-    border: @text 2px solid;
-    color: @text;
+    background-color: rgba(110, 106, 134, 0.1);
+    color: @muted;
     font-style: italic;
     font-weight: bold;
 }
 
+#idle_inhibitor.activated {
+    background-color: rgba(196, 167, 231, 0.1);
+    color: @iris;
+}
+
 #custom-player {
-    background-color: @base;
-    border: @text 2px solid;
-    color: @text;
     font-style: italic;
     font-weight: bold;
+}
+
+#custom-player.paused {
+    background-color: rgba(110, 106, 134, 0.1);
+    color: @muted;
+}
+
+#custom-player.playing {
+    background-color: rgba(196, 167, 231, 0.1);
+    color: @iris;
+}
+
+#custom-pomo {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#custom-pomo.running {
+    background-color: rgba(234, 154, 151, 0.1);
+    color: @rose;
+}
+
+#custom-pomo.paused {
+    background-color: rgba(246, 193, 119, 0.1);
+    color: @gold;
+}
+
+#custom-pomo.finished {
+    background-color: rgba(110, 106, 134, 0.1);
+    color: @muted;
+}
+
+.modules-left {
+    background-color: @surface;
+    border-radius: 0 8px 9999px 0;
+    margin: 4px 0;
+}
+
+.modules-center {
+    background-color: @surface;
+    border-radius: 9999px 8px;
+    margin: 4px 0;
+}
+
+.modules-right {
+    background-color: @surface;
+    border-radius: 9999px 0 0 8px;
+    margin: 4px 0;
 }
 
 .module {
     border-radius: 9999px 8px;
-    margin: 8px 0;
+    margin: 4px 0;
 }
 
 .modules-left > widget:first-child > .module {
-    margin-left: 8px;
+    border-radius: 0 8px 9999px 0;
 }
 
 .modules-right > widget:last-child > .module {
+    border-radius: 9999px 0 0 8px;
+}
+
+.modules-left > widget:last-child > .module {
     margin-right: 8px;
+}
+
+.modules-center > widget:first-child > .module {
+    margin-left: 8px;
+}
+
+.modules-center > widget:last-child > .module {
+    margin-right: 8px;
+}
+
+.modules-right > widget:first-child > .module {
+    margin-left: 8px;
 }

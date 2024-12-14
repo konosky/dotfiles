@@ -7,20 +7,21 @@
     "spacing": 8, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-    ],
-    "modules-center": [
         "custom/player",
         "idle_inhibitor",
         "pulseaudio",
-        "network",
+        "network"
+    ],
+    "modules-center": [
+        "custom/pomo",
+        "clock"
+    ],
+    "modules-right": [
         "cpu",
         "memory",
         "battery",
         "backlight",
-        "clock",
         "tray"
-    ],
-    "modules-right": [
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -113,6 +114,16 @@
     "custom/player": {
         "exec": "~/.config/waybar/scripts/player.sh",
         "format": "{} ",
+        "interval": 1,
+        "return-type": "json"
+    },
+    "custom/pomo": {
+        "format": "   {}",
+        "exec": "pomodoro-cli status --format json --time-format digital",
+        "return-type": "json",
+        "on-click": "pomodoro-cli start --add 5m --notify",
+        "on-click-middle": "pomodoro-cli pause",
+        "on-click-right": "pomodoro-cli stop",
         "interval": 1
     }
 }
