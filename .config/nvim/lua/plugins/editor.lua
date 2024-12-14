@@ -190,6 +190,8 @@ return {
 			{ "<Leader>j", "<C-w>j", desc = "Down" },
 			{ "<Leader>k", "<C-w>k", desc = "Up" },
 			{ "<Leader>l", "<C-w>l", desc = "Right" },
+
+			{ "<leader>L", "<Cmd>Lazy<CR>", desc = "Lazy" },
 		},
 	},
 	{
