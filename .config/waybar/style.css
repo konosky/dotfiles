@@ -33,6 +33,7 @@ window#waybar.solo {
 #network,
 #pulseaudio,
 #tray,
+#idle_inhibitor,
 #custom-player {
     padding: 0 26px;
 }
@@ -96,6 +97,14 @@ window#waybar.solo {
 #tray {
     background-color: @base;
     border: @text 2px solid;
+}
+
+#idle_inhibitor {
+    background-color: @base;
+    border: @text 2px solid;
+    color: @text;
+    font-style: italic;
+    font-weight: bold;
 }
 
 #custom-player {
