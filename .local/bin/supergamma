@@ -1,0 +1,4 @@
+#!/bin/bash
+if ! pkill gammastep; then
+  gammastep -O 2000
+fi
