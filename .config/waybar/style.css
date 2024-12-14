@@ -37,7 +37,8 @@ window#waybar.solo {
 #tray,
 #idle_inhibitor,
 #custom-player,
-#custom-pomo {
+#custom-pomo,
+#custom-recorder {
     padding: 0 26px;
 }
 
@@ -149,6 +150,11 @@ window#waybar.solo {
 #custom-pomo.finished {
     background-color: rgba(110, 106, 134, 0.1);
     color: @muted;
+}
+
+#custom-recorder {
+    background-color: rgba(235, 111, 146, 0.1);
+    color: @love;
 }
 
 .modules-left {

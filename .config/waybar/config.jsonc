@@ -17,6 +17,7 @@
         "clock"
     ],
     "modules-right": [
+        "custom/recorder",
         "cpu",
         "memory",
         "battery",
@@ -124,6 +125,11 @@
         "on-click": "pomodoro-cli start --add 5m --notify",
         "on-click-middle": "pomodoro-cli pause",
         "on-click-right": "pomodoro-cli stop",
+        "interval": 1
+    },
+    "custom/recorder": {
+        "exec": "~/.config/waybar/scripts/recorder.sh",
+        "format": "{}",
         "interval": 1
     }
 }
