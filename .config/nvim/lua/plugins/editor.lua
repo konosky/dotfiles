@@ -168,6 +168,8 @@ return {
 			{ "<Leader>bk", "<C-w>k", desc = "Up" },
 			{ "<Leader>bl", "<C-w>l", desc = "Right" },
 
+			{ "<Leader>bb", "<C-w><C-w>", desc = "Cycle" },
+
 			{ "<Leader>t", group = "Tab" },
 
 			{ "<Leader>te", "<Cmd>tabedit<CR>", desc = "Open" },
