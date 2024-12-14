@@ -1,0 +1,5 @@
+#!/bin/bash
+file="$(xdg-user-dir VIDEOS)/$(date +%s_record.mp4)"
+if ! pkill -SIGINT wf-recorder; then
+  wf-recorder --audio="$(pactl get-default-sink).monitor" -f "${file}" -g "$(slurp)"
+fi
