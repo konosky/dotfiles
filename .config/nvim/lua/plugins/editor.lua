@@ -168,6 +168,14 @@ return {
 			{ "<Leader>bk", "<C-w>k", desc = "Up" },
 			{ "<Leader>bl", "<C-w>l", desc = "Right" },
 
+			{ "<Leader>t", group = "Tab" },
+
+			{ "<Leader>te", "<Cmd>tabedit<CR>", desc = "Open" },
+			{ "<Leader>tc", "<Cmd>tabclose<CR>", desc = "Close" },
+
+			{ "<Leader>tp", "<Cmd>tabprevious<CR>", desc = "Previous" },
+			{ "<Leader>tn", "<Cmd>tabnext<CR>", desc = "Next" },
+
 			{ "<Leader>w", "<Cmd>write<CR>", desc = "Write" },
 
 			{ "<Leader>p", "<Cmd>bprevious<CR>", desc = "Previous" },
