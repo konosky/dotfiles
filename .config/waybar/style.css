@@ -38,7 +38,8 @@ window#waybar.solo {
 #idle_inhibitor,
 #custom-player,
 #custom-pomo,
-#custom-recorder {
+#custom-recorder,
+#cava {
     padding: 0 26px;
 }
 
@@ -155,6 +156,11 @@ window#waybar.solo {
 #custom-recorder {
     background-color: rgba(235, 111, 146, 0.1);
     color: @love;
+}
+
+#cava {
+    background-color: rgba(196, 167, 231, 0.1);
+    color: @iris;
 }
 
 .modules-left {
