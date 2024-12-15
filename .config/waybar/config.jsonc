@@ -122,7 +122,7 @@
         "format": "   {}",
         "exec": "pomodoro-cli status --format json --time-format digital",
         "return-type": "json",
-        "on-click": "pomodoro-cli start --add 5m --notify",
+        "on-click": "pomodoro-cli start --add 9m --notify",
         "on-click-middle": "pomodoro-cli pause",
         "on-click-right": "pomodoro-cli stop",
         "interval": 1
