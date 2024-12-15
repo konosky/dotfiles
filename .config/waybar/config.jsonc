@@ -118,7 +118,8 @@
         "exec": "~/.config/waybar/scripts/player.sh",
         "format": "{} ",
         "interval": 1,
-        "return-type": "json"
+        "return-type": "json",
+        "on-click": "playerctl play-pause"
     },
     "custom/pomo": {
         "format": "{} ",
