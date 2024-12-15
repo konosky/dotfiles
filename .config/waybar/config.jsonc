@@ -119,7 +119,7 @@
         "return-type": "json"
     },
     "custom/pomo": {
-        "format": "   {}",
+        "format": "{} ",
         "exec": "pomodoro-cli status --format json --time-format digital",
         "return-type": "json",
         "on-click": "pomodoro-cli start --add 9m --notify",
