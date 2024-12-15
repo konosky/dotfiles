@@ -149,7 +149,7 @@
         "reverse": false,
         "bar_delimiter": 0,
         "monstercat": false,
-        "waves": false,
+        "waves": true,
         "noise_reduction": 0.77,
         "input_delay": 2,
         "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
