@@ -1,6 +1,9 @@
 [general]
 framerate = 240
 
+[smoothing]
+waves = 1
+
 [color]
 # In the [color] section
 gradient = 1
