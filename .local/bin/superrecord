@@ -1,5 +1,10 @@
 #!/bin/bash
+cmd="${1}"
 file="$(xdg-user-dir VIDEOS)/$(date +%s_record.mp4)"
 if ! pkill -SIGINT wf-recorder; then
-  wf-recorder --audio="$(pactl get-default-sink).monitor" -c h264_vaapi -d /dev/dri/renderD128 -f "${file}" -g "$(slurp)"
+  if [[ "${cmd}" == slurp ]]; then
+    wf-recorder --audio="$(pactl get-default-sink).monitor" -c h264_vaapi -d /dev/dri/renderD128 -f "${file}" -g "$(slurp)"
+  else
+    wf-recorder --audio="$(pactl get-default-sink).monitor" -c h264_vaapi -d /dev/dri/renderD128 -f "${file}"
+  fi
 fi
