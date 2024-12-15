@@ -133,6 +133,7 @@
     "custom/recorder": {
         "exec": "~/.config/waybar/scripts/recorder.sh",
         "format": "{}",
-        "interval": 1
+        "interval": 1,
+        "on-click": "superrecord"
     }
 }
