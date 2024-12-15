@@ -30,6 +30,9 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		vim.keymap.set("i", "<C-e>", "<End>", { noremap = true })
 
 		vim.keymap.set("n", "<C-d>", "<Cmd>quit<CR>", { noremap = true })
+
+		vim.keymap.set("v", ">", ">gv", { noremap = true })
+		vim.keymap.set("v", "<", "<gv", { noremap = true })
 	end,
 })
 
