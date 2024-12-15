@@ -7,11 +7,20 @@
 }
 
 window#waybar {
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.top {
     background: linear-gradient(217deg, rgba(156, 207, 216, 0.8), rgba(156, 207, 216, 0) 70.71%),
         linear-gradient(127deg, rgba(196, 167, 231, 0.8), rgba(196, 167, 231, 0) 70.71%),
         linear-gradient(336deg, rgba(49, 116, 143, 0.8), rgba(49, 116, 143, 0) 70.71%);
-    transition-property: background-color;
-    transition-duration: .5s;
+}
+
+window#waybar.bottom {
+    background: linear-gradient(217deg, rgba(196, 167, 231, 0.8), rgba(196, 167, 231, 0) 70.71%),
+        linear-gradient(127deg, rgba(156, 207, 216, 0.8), rgba(156, 207, 216, 0) 70.71%),
+        linear-gradient(336deg, rgba(49, 116, 143, 0.8), rgba(49, 116, 143, 0) 70.71%);
 }
 
 window#waybar.hidden {
@@ -39,7 +48,8 @@ window#waybar.solo {
 #custom-player,
 #custom-pomo,
 #custom-recorder,
-#cava {
+#cava,
+#window {
     padding: 0 26px;
 }
 
@@ -161,6 +171,13 @@ window#waybar.solo {
 #cava {
     background-color: rgba(196, 167, 231, 0.1);
     color: @iris;
+}
+
+#window {
+    background-color: rgba(156, 207, 216, 0.1);
+    color: @foam;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .modules-left {

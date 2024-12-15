@@ -1,160 +1,194 @@
 // -*- mode: jsonc -*-
-{
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 46, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 8, // Gaps between modules (4px)
-    // Choose the order of the modules
-    "modules-left": [
-        "custom/player",
-        "idle_inhibitor",
-        "cava",
-        "pulseaudio",
-        "network"
-    ],
-    "modules-center": [
-        "custom/pomo",
-        "clock"
-    ],
-    "modules-right": [
-        "custom/recorder",
-        "cpu",
-        "memory",
-        "battery",
-        "backlight",
-        "tray"
-    ],
-    // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
+[
+    {
+        // "layer": "top", // Waybar at top layer
+        // "position": "bottom", // Waybar position (top|bottom|left|right)
+        "height": 46, // Waybar height (to be removed for auto height)
+        // "width": 1280, // Waybar width
+        "spacing": 8, // Gaps between modules (4px)
+        // Choose the order of the modules
+        "modules-left": [
+            "custom/player",
+            "cava",
+            "pulseaudio"
+        ],
+        "modules-center": [
+            "custom/pomo",
+            "clock"
+        ],
+        "modules-right": [
+            "custom/recorder",
+            "cpu",
+            "memory",
+            "battery",
+            "backlight",
+            "tray"
+        ],
+        // Modules configuration
+        // "sway/workspaces": {
+        //     "disable-scroll": true,
+        //     "all-outputs": true,
+        //     "warp-on-scroll": false,
+        //     "format": "{name}: {icon}",
+        //     "format-icons": {
+        //         "1": "",
+        //         "2": "",
+        //         "3": "",
+        //         "4": "",
+        //         "5": "",
+        //         "urgent": "",
+        //         "focused": "",
+        //         "default": ""
+        //     }
+        // },
+        "tray": {
+            // "icon-size": 21,
+            "spacing": 10
+        },
+        "clock": {
+            // "timezone": "America/New_York",
+            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+            "format-alt": "{:%Y-%m-%d} ",
+            "format": "{:%H:%M:%S} ",
+            "interval": 1
+        },
+        "cpu": {
+            "format": "{usage}% ",
+            "tooltip": false
+        },
+        "memory": {
+            "format": "{}% "
+        },
+        "backlight": {
+            // "device": "acpi_video1",
+            "format": "{percent}% {icon}",
+            "format-icons": ["", "", "", "", "", "", "", "", ""]
+        },
+        "battery": {
+            "states": {
+                // "good": 95,
+                "warning": 30,
+                "critical": 15
+            },
+            "format": "{capacity}% {icon}",
+            "format-full": "{capacity}% {icon}",
+            "format-charging": "{capacity}% ",
+            "format-plugged": "{capacity}% ",
+            "format-alt": "{time} {icon}",
+            // "format-good": "", // An empty format will hide the module
+            // "format-full": "",
+            "format-icons": ["", "", "", "", ""]
+        },
+        "pulseaudio": {
+            // "scroll-step": 1, // %, can be a float
+            "format": "{volume}% {icon} {format_source}",
+            "format-bluetooth": "{volume}% {icon} {format_source}",
+            "format-bluetooth-muted": " {icon} {format_source}",
+            "format-muted": " {format_source}",
+            "format-source": "{volume}% ",
+            "format-source-muted": "",
+            "format-icons": {
+                "headphone": "",
+                "hands-free": "",
+                "headset": "",
+                "phone": "",
+                "portable": "",
+                "car": "",
+                "default": ["", "", ""]
+            },
+            "on-click": "pavucontrol"
+        },
+        "custom/player": {
+            "exec": "~/.config/waybar/scripts/player.sh",
+            "format": "{} ",
+            "interval": 1,
+            "return-type": "json",
+            "on-click": "playerctl play-pause"
+        },
+        "custom/pomo": {
+            "format": "{} ",
+            "exec": "pomodoro-cli status --format json --time-format digital",
+            "return-type": "json",
+            "on-click": "pomodoro-cli start --add 9m --notify",
+            "on-click-middle": "pomodoro-cli pause",
+            "on-click-right": "pomodoro-cli stop",
+            "interval": 1
+        },
+        "custom/recorder": {
+            "exec": "~/.config/waybar/scripts/recorder.sh",
+            "format": "{}",
+            "interval": 1,
+            "on-click": "superrecord"
+        },
+        "cava": {
+            "framerate": 240,
+            "autosens": 1,
+            "bars": 14,
+            "lower_cutoff_freq": 50,
+            "higher_cutoff_freq": 10000,
+            "method": "pulse",
+            "source": "auto",
+            "stereo": true,
+            "reverse": false,
+            "bar_delimiter": 0,
+            "monstercat": false,
+            "waves": true,
+            "noise_reduction": 0.77,
+            "input_delay": 2,
+            "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+            "actions": {
+              "on-click-right": "mode"
+            }
         }
     },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10
-    },
-    "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d} ",
-        "format": "{:%H:%M:%S} ",
-        "interval": 1
-    },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-    "memory": {
-        "format": "{}% "
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
+    {
+        // "layer": "top", // Waybar at top layer
+        "position": "bottom", // Waybar position (top|bottom|left|right)
+        "height": 46, // Waybar height (to be removed for auto height)
+        // "width": 1280, // Waybar width
+        "spacing": 8, // Gaps between modules (4px)
+        // Choose the order of the modules
+        "modules-left": [
+        ],
+        "modules-center": [
+            "hyprland/window"
+        ],
+        "modules-right": [
+            "idle_inhibitor",
+            "network"
+        ],
+        // Modules configuration
+        // "sway/workspaces": {
+        //     "disable-scroll": true,
+        //     "all-outputs": true,
+        //     "warp-on-scroll": false,
+        //     "format": "{name}: {icon}",
+        //     "format-icons": {
+        //         "1": "",
+        //         "2": "",
+        //         "3": "",
+        //         "4": "",
+        //         "5": "",
+        //         "urgent": "",
+        //         "focused": "",
+        //         "default": ""
+        //     }
+        // },
+        "idle_inhibitor": {
+            "format": "{icon}",
+            "format-icons": {
+                "activated": "",
+                "deactivated": ""
+            }
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
-    },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    },
-    "custom/player": {
-        "exec": "~/.config/waybar/scripts/player.sh",
-        "format": "{} ",
-        "interval": 1,
-        "return-type": "json",
-        "on-click": "playerctl play-pause"
-    },
-    "custom/pomo": {
-        "format": "{} ",
-        "exec": "pomodoro-cli status --format json --time-format digital",
-        "return-type": "json",
-        "on-click": "pomodoro-cli start --add 9m --notify",
-        "on-click-middle": "pomodoro-cli pause",
-        "on-click-right": "pomodoro-cli stop",
-        "interval": 1
-    },
-    "custom/recorder": {
-        "exec": "~/.config/waybar/scripts/recorder.sh",
-        "format": "{}",
-        "interval": 1,
-        "on-click": "superrecord"
-    },
-    "cava": {
-        "framerate": 240,
-        "autosens": 1,
-        "bars": 14,
-        "lower_cutoff_freq": 50,
-        "higher_cutoff_freq": 10000,
-        "method": "pulse",
-        "source": "auto",
-        "stereo": true,
-        "reverse": false,
-        "bar_delimiter": 0,
-        "monstercat": false,
-        "waves": true,
-        "noise_reduction": 0.77,
-        "input_delay": 2,
-        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
-        "actions": {
-          "on-click-right": "mode"
+        "network": {
+            // "interface": "wlp2*", // (Optional) To force the use of this interface
+            "format-wifi": "{essid} ({signalStrength}%) ",
+            "format-ethernet": "{ipaddr}/{cidr} ",
+            "tooltip-format": "{ifname} via {gwaddr} ",
+            "format-linked": "{ifname} (No IP) ",
+            "format-disconnected": "Disconnected ⚠",
+            "format-alt": "{ifname}: {ipaddr}/{cidr}"
         }
     }
-}
+]
