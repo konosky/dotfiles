@@ -1,5 +1,10 @@
 #!/bin/bash
+cmd="${1}"
 file="$(xdg-user-dir PICTURES)/$(date +%s_grim.png)"
-grim -g "$(slurp)" "${file}"
+if [[ "${cmd}" == slurp ]]; then
+  grim -g "$(slurp)" "${file}"
+else
+  grim "${file}"
+fi
 wl-copy < "${file}"
 imv "${file}"
