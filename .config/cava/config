@@ -1,3 +1,6 @@
+[general]
+framerate = 240
+
 [color]
 # In the [color] section
 gradient = 1
