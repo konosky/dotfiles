@@ -40,6 +40,7 @@ window#waybar.solo {
 #battery,
 #cpu,
 #memory,
+#temperature,
 #backlight,
 #network,
 #pulseaudio,
@@ -110,6 +111,13 @@ window#waybar.solo {
 #pulseaudio.muted {
     background-color: rgba(110, 106, 134, 0.1);
     color: @muted;
+}
+
+#temperature {
+    background-color: rgba(156, 207, 216, 0.1);
+    color: @foam;
+    font-style: italic;
+    font-weight: bold;
 }
 
 #tray {
