@@ -50,7 +50,8 @@ window#waybar.solo {
 #custom-pomo,
 #custom-recorder,
 #cava,
-#window {
+#window,
+#bluetooth {
     padding: 0 26px;
 }
 
@@ -184,6 +185,13 @@ window#waybar.solo {
 #window {
     background-color: rgba(156, 207, 216, 0.1);
     color: @foam;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#bluetooth {
+    background-color: rgba(196, 167, 231, 0.1);
+    color: @iris;
     font-style: italic;
     font-weight: bold;
 }

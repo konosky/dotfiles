@@ -163,6 +163,7 @@
             "hyprland/window"
         ],
         "modules-right": [
+            "bluetooth",
             "idle_inhibitor",
             "network"
         ],
@@ -198,6 +199,9 @@
             "format-linked": "{ifname} (No IP) ",
             "format-disconnected": "Disconnected ⚠",
             "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        },
+        "bluetooth": {
+            "format": "{status} "
         }
     }
 ]
