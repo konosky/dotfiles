@@ -163,6 +163,7 @@
             "hyprland/window"
         ],
         "modules-right": [
+            "custom/vnc",
             "bluetooth",
             "idle_inhibitor",
             "network"
@@ -202,6 +203,12 @@
         },
         "bluetooth": {
             "format": "{status} "
+        },
+        "custom/vnc": {
+            "exec": "~/.config/waybar/scripts/vnc.sh",
+            "format": "{}",
+            "interval": 1,
+            "on-click": "supervnc"
         }
     }
 ]

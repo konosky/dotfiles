@@ -51,7 +51,8 @@ window#waybar.solo {
 #custom-recorder,
 #cava,
 #window,
-#bluetooth {
+#bluetooth,
+#custom-vnc {
     padding: 0 26px;
 }
 
@@ -190,6 +191,13 @@ window#waybar.solo {
 }
 
 #bluetooth {
+    background-color: rgba(196, 167, 231, 0.1);
+    color: @iris;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#custom-vnc {
     background-color: rgba(196, 167, 231, 0.1);
     color: @iris;
     font-style: italic;

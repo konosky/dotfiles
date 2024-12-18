@@ -1,0 +1,4 @@
+#!/bin/bash
+if ! pkill wayvnc; then
+  wayvnc 0.0.0.0
+fi
