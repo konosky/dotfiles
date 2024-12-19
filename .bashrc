@@ -33,4 +33,5 @@ alias du=dust
 alias sed=sd
 alias ps=procs
 alias vi=nvim
+alias rm=trash
 . "$HOME/.cargo/env"
