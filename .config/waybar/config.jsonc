@@ -229,6 +229,16 @@
             "format": "{}",
             "interval": 1,
             "on-click": "supergamma"
+        },
+        "hyprland/workspaces": {
+            "format": "{name} {icon}",
+            "format-icons": {
+                "7": "",
+                "8": "",
+                "9": "",
+                "10": "",
+                "default": ""
+            }
         }
     }
 ]
