@@ -225,7 +225,8 @@
         },
         "hyprland/window": {
             "max-length": 50,
-            "on-click": "alacritty --class AlacrittyFloat -e htop"
+            "on-click": "alacritty --class AlacrittyFloat -e htop",
+            "on-click-right": "alacritty --class AlacrittyFloat -e btm"
         },
         "custom/gamma": {
             "exec": "~/.config/waybar/scripts/gamma.sh",
