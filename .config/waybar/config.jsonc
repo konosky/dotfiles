@@ -154,7 +154,8 @@
             "on-click": "alacritty --class AlacrittyFloat -e cava"
         },
         "disk": {
-            "format": "{percentage_used}% "
+            "format": "{percentage_used}% ",
+            "on-click": "alacritty --class AlacrittyFloat -e bash -c 'dust /; echo exit; read -s -n 1'"
         }
     },
     {
