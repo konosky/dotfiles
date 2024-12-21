@@ -203,7 +203,8 @@
             "format-alt": "{ifname}: {ipaddr}/{cidr}"
         },
         "bluetooth": {
-            "format": "{status} "
+            "format": "{status} ",
+            "on-click": "alacritty --class AlacrittyFloat -e bluetoothctl"
         },
         "custom/vnc": {
             "exec": "~/.config/waybar/scripts/vnc.sh",
