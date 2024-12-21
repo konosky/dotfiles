@@ -148,7 +148,8 @@
             "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
             "actions": {
               "on-click-right": "mode"
-            }
+            },
+            "on-click": "alacritty --class AlacrittyFloat -e cava"
         }
     },
     {
