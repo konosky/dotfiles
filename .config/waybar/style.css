@@ -266,3 +266,11 @@ window#waybar.solo {
 .modules-right > widget:first-child > .module {
     margin-left: 8px;
 }
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+window#waybar.empty .modules-center {
+    background-color: transparent;
+}
