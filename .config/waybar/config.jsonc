@@ -171,6 +171,7 @@
         ],
         "modules-right": [
             "custom/vnc",
+            "custom/gamma",
             "bluetooth",
             "idle_inhibitor",
             "network"
@@ -221,6 +222,12 @@
         },
         "hyprland/window": {
             "max-length": 50
+        },
+        "custom/gamma": {
+            "exec": "~/.config/waybar/scripts/gamma.sh",
+            "format": "{}",
+            "interval": 1,
+            "on-click": "supergamma"
         }
     }
 ]
