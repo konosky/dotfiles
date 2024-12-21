@@ -209,6 +209,9 @@
             "format": "{}",
             "interval": 1,
             "on-click": "supervnc"
+        },
+        "hyprland/window": {
+            "max-length": 50
         }
     }
 ]
