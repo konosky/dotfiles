@@ -1,7 +1,7 @@
 
 [Default Applications]
-text/html=chromium.desktop
-x-scheme-handler/http=chromium.desktop
-x-scheme-handler/https=chromium.desktop
-x-scheme-handler/about=chromium.desktop
-x-scheme-handler/unknown=chromium.desktop
+text/html=io.github.zen_browser.zen.desktop
+x-scheme-handler/http=io.github.zen_browser.zen.desktop
+x-scheme-handler/https=io.github.zen_browser.zen.desktop
+x-scheme-handler/about=io.github.zen_browser.zen.desktop
+x-scheme-handler/unknown=io.github.zen_browser.zen.desktop
