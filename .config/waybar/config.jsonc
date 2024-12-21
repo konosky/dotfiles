@@ -18,6 +18,7 @@
         ],
         "modules-right": [
             "custom/recorder",
+            "disk",
             "cpu",
             "memory",
             "battery",
@@ -151,6 +152,9 @@
               "on-click-right": "mode"
             },
             "on-click": "alacritty --class AlacrittyFloat -e cava"
+        },
+        "disk": {
+            "format": "{percentage_used}% "
         }
     },
     {

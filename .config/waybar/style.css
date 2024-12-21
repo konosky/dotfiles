@@ -52,7 +52,8 @@ window#waybar.solo {
 #cava,
 #window,
 #bluetooth,
-#custom-vnc {
+#custom-vnc,
+#disk {
     padding: 0 26px;
 }
 
@@ -200,6 +201,13 @@ window#waybar.solo {
 #custom-vnc {
     background-color: rgba(196, 167, 231, 0.1);
     color: @iris;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#disk {
+    background-color: rgba(156, 207, 216, 0.1);
+    color: @foam;
     font-style: italic;
     font-weight: bold;
 }
