@@ -105,7 +105,8 @@
                 "car": "",
                 "default": ["", "", ""]
             },
-            "on-click": "pavucontrol"
+            "on-click": "pavucontrol",
+            "on-click-right": "alacritty --class AlacrittyFloat -e alsamixer"
         },
         "custom/player": {
             "exec": "~/.config/waybar/scripts/player.sh",
