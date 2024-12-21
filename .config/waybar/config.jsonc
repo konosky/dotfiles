@@ -56,7 +56,8 @@
         },
         "cpu": {
             "format": "{usage}% ",
-            "tooltip": false
+            "tooltip": false,
+            "on-click": "alacritty --class AlacrittyFloat -e bash -c 'fastfetch; echo exit; read -s -n 1'"
         },
         "memory": {
             "format": "{}% "
