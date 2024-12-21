@@ -54,7 +54,8 @@ window#waybar.solo {
 #bluetooth,
 #custom-vnc,
 #disk,
-#custom-gamma {
+#custom-gamma,
+#workspaces {
     padding: 0 26px;
 }
 
@@ -218,6 +219,24 @@ window#waybar.solo {
     color: @iris;
     font-style: italic;
     font-weight: bold;
+}
+
+#workspaces {
+    background-color: rgba(156, 207, 216, 0.1);
+}
+
+#workspaces button {
+    color: @foam;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#workspaces button:hover {
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    transition: none;
 }
 
 .modules-left {
