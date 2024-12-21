@@ -224,7 +224,8 @@
             "on-click": "supervnc"
         },
         "hyprland/window": {
-            "max-length": 50
+            "max-length": 50,
+            "on-click": "alacritty --class AlacrittyFloat -e htop"
         },
         "custom/gamma": {
             "exec": "~/.config/waybar/scripts/gamma.sh",
