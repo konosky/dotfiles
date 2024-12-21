@@ -131,7 +131,7 @@
             "on-click": "superrecord"
         },
         "cava": {
-            "framerate": 240,
+            "framerate": 60,
             "autosens": 1,
             "bars": 14,
             "lower_cutoff_freq": 50,
