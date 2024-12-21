@@ -112,7 +112,8 @@
             "format": "{} ",
             "interval": 1,
             "return-type": "json",
-            "on-click": "playerctl play-pause"
+            "on-click": "playerctl play-pause",
+            "max-length": 50
         },
         "custom/pomo": {
             "format": "{} ",
