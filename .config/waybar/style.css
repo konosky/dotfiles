@@ -187,8 +187,8 @@ window#waybar.solo {
 }
 
 #window {
-    background-color: rgba(156, 207, 216, 0.1);
-    color: @foam;
+    background-color: rgba(224, 222, 244, 0.1);
+    color: @text;
     font-style: italic;
     font-weight: bold;
 }
