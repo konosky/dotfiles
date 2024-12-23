@@ -259,4 +259,8 @@ return {
 			"rcarriga/nvim-notify",
 		},
 	},
+	{
+		"folke/zen-mode.nvim",
+		opts = {},
+	},
 }
