@@ -173,13 +173,13 @@ return {
 
 			{ "<Leader>bb", "<C-w><C-w>", desc = "Cycle" },
 
-			{ "<Leader>t", group = "Tab" },
+			{ "<Leader>T", group = "Tab" },
 
-			{ "<Leader>te", "<Cmd>tabedit<CR>", desc = "Open" },
-			{ "<Leader>tc", "<Cmd>tabclose<CR>", desc = "Close" },
+			{ "<Leader>Te", "<Cmd>tabedit<CR>", desc = "Open" },
+			{ "<Leader>Tc", "<Cmd>tabclose<CR>", desc = "Close" },
 
-			{ "<Leader>tp", "<Cmd>tabprevious<CR>", desc = "Previous" },
-			{ "<Leader>tn", "<Cmd>tabnext<CR>", desc = "Next" },
+			{ "<Leader>Tp", "<Cmd>tabprevious<CR>", desc = "Previous" },
+			{ "<Leader>Tn", "<Cmd>tabnext<CR>", desc = "Next" },
 
 			{ "<Leader>w", "<Cmd>write<CR>", desc = "Write" },
 
@@ -309,5 +309,19 @@ return {
 				auto_enable = true,
 			}
 		end,
+	},
+	{
+		"nvim-tree/nvim-tree.lua",
+		config = function()
+			vim.g.loaded_netrw = 1
+			vim.g.loaded_netrwPlugin = 1
+
+			vim.opt.termguicolors = true
+
+			require("nvim-tree").setup()
+		end,
+		keys = {
+			{ "<Leader>tt", "<Cmd>NvimTreeToggle<CR>", desc = "Toggle" },
+		},
 	},
 }
