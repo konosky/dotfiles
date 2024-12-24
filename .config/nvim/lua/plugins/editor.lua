@@ -262,5 +262,8 @@ return {
 	{
 		"folke/zen-mode.nvim",
 		opts = {},
+		keys = {
+			{ "<Leader>z", "<Cmd>ZenMode<CR>", desc = "Zen Mode" },
+		},
 	},
 }
