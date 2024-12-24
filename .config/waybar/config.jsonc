@@ -57,7 +57,7 @@
         "cpu": {
             "format": "{usage}% ",
             "tooltip": false,
-            "on-click": "alacritty --class AlacrittyFloat -e bash -c 'fastfetch; echo exit; read -s -n 1'"
+            "on-click": "kitty --class kitty_float bash -c 'fastfetch; echo exit; read -s -n 1'"
         },
         "memory": {
             "format": "{}% "
@@ -108,7 +108,7 @@
                 "default": ["", "", ""]
             },
             "on-click": "pavucontrol",
-            "on-click-right": "alacritty --class AlacrittyFloat -e alsamixer"
+            "on-click-right": "kitty --class kitty_float alsamixer"
         },
         "custom/player": {
             "exec": "~/.config/waybar/scripts/player.sh",
@@ -152,11 +152,11 @@
             "actions": {
               "on-click-right": "mode"
             },
-            "on-click": "alacritty --class AlacrittyFloat -e cava"
+            "on-click": "kitty --class kitty_float cava"
         },
         "disk": {
             "format": "{percentage_used}% ",
-            "on-click": "alacritty --class AlacrittyFloat -e bash -c 'dust /; echo exit; read -s -n 1'"
+            "on-click": "kitty --class kitty_float bash -c 'dust /; echo exit; read -s -n 1'"
         }
     },
     {
@@ -211,11 +211,11 @@
             "format-linked": "{ifname} (No IP) ",
             "format-disconnected": "Disconnected ⚠",
             "format-alt": "{ifname}: {ipaddr}/{cidr}",
-            "on-click": "alacritty --class AlacrittyFloat -e iwctl"
+            "on-click": "kitty --class kitty_float iwctl"
         },
         "bluetooth": {
             "format": "{status} ",
-            "on-click": "alacritty --class AlacrittyFloat -e bluetoothctl"
+            "on-click": "kitty --class kitty_float bluetoothctl"
         },
         "custom/vnc": {
             "exec": "~/.config/waybar/scripts/vnc.sh",
@@ -225,8 +225,8 @@
         },
         "hyprland/window": {
             "max-length": 50,
-            "on-click": "alacritty --class AlacrittyFloat -e htop",
-            "on-click-right": "alacritty --class AlacrittyFloat -e btm"
+            "on-click": "kitty --class kitty_float htop",
+            "on-click-right": "kitty --class kitty_float btm"
         },
         "custom/gamma": {
             "exec": "~/.config/waybar/scripts/gamma.sh",
