@@ -37,6 +37,9 @@ alias sed=sd
 alias ps=procs
 alias vi=nvim
 alias rm=trash
+
+alias g=git
+alias l=ls
 . "$HOME/.cargo/env"
 
 # bun
