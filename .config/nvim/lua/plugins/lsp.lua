@@ -97,6 +97,7 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		opts = {
 			ensure_installed = {
+				"csharp-language-server",
 				"emmet-language-server",
 				"lua-language-server",
 				"stylua",
