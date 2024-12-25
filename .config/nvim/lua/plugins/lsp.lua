@@ -98,6 +98,7 @@ return {
 		opts = {
 			ensure_installed = {
 				"csharp-language-server",
+				"csharpier",
 				"emmet-language-server",
 				"lua-language-server",
 				"stylua",
