@@ -9,3 +9,5 @@
 [user]
 	email = konosuke@konosuke.work
 	name = Konosuke Sakai
+[init]
+	defaultBranch = main
