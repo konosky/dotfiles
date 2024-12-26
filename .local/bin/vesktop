@@ -1,0 +1,2 @@
+#!/bin/bash
+exec xargs /var/lib/flatpak/exports/bin/dev.vencord.Vesktop "${@}" < ~/.config/chromium-flags.conf
