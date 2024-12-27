@@ -23,6 +23,9 @@ export PATH="${HOME}/.dotnet/tools:${PATH}"
 # Functions
 cpfast() { mkdir "$2" && find "$1" -type d | cpio -p "$2" && find "$1" ! -type d | split --filter="cpio -p '$2'" -n "r/$(nproc)" -u; }
 
+create_unity_project() { mkdir -p "$1/Assets"; }
+alias cup=create_unity_project
+
 # Aliases
 alias find=fd
 alias cd=z
