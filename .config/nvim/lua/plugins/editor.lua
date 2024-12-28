@@ -337,6 +337,9 @@ return {
 					go = "go run %",
 				},
 			},
+			behavior = {
+				startinsert = true,
+			},
 		},
 		keys = {
 			{ "<Leader>r", "<Cmd>Jaq<CR>", desc = "Run" },
