@@ -324,4 +324,22 @@ return {
 			{ "<Leader>tt", "<Cmd>NvimTreeToggle<CR>", desc = "Toggle" },
 		},
 	},
+	{
+		"is0n/jaq-nvim",
+		opts = {
+			cmds = {
+				internal = {
+					lua = "luafile %",
+					vim = "source %",
+				},
+				external = {
+					python = "python3 %",
+					go = "go run %",
+				},
+			},
+		},
+		keys = {
+			{ "<Leader>r", "<Cmd>Jaq<CR>", desc = "Run" },
+		},
+	},
 }
