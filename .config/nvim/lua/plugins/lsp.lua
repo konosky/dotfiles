@@ -123,6 +123,7 @@ return {
 				"csharpier",
 				"emmet-language-server",
 				"lua-language-server",
+				"pyright",
 				"stylua",
 			},
 		},
