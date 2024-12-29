@@ -49,4 +49,22 @@ return {
 			})
 		end,
 	},
+	{
+		"jmbuhr/otter.nvim",
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+		},
+		config = function()
+			local otter = require("otter")
+
+			otter.setup({})
+
+			vim.api.nvim_create_autocmd("BufRead", {
+				pattern = "*.ipynb",
+				callback = function()
+					otter.activate()
+				end,
+			})
+		end,
+	},
 }
