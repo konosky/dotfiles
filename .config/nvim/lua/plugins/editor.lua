@@ -123,6 +123,14 @@ return {
 			end
 
 			vim.cmd("autocmd FileType * :lua treesitter_automatic_parser_setup()")
+
+			local configs = require("nvim-treesitter.configs")
+
+			configs.setup({
+				highlight = {
+					enable = true,
+				},
+			})
 		end,
 	},
 	{
