@@ -194,6 +194,8 @@ return {
 			{ "<Leader>l", "<C-w>l", desc = "Right" },
 
 			{ "<leader>L", "<Cmd>Lazy<CR>", desc = "Lazy" },
+
+			{ "<leader>M", "<Cmd>Mason<CR>", desc = "Mason" },
 		},
 	},
 	{
