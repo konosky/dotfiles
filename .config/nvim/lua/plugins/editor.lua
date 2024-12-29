@@ -100,6 +100,7 @@ return {
 
 			vim.keymap.set("n", "<Leader>fb", require("fzf-lua").buffers, { desc = "fzf buffers" })
 			vim.keymap.set("n", "<Leader>ff", require("fzf-lua").files, { desc = "fzf files" })
+			vim.keymap.set("n", "<Leader>fq", require("fzf-lua").quickfix, { desc = "fzf quickfixes" })
 			vim.keymap.set("n", "<Leader>fl", require("fzf-lua").lines, { desc = "fzf lines" })
 			vim.keymap.set("n", "<Leader>ft", require("fzf-lua").tabs, { desc = "fzf tabs" })
 			vim.keymap.set("n", "<Leader>fp", require("fzf-lua").live_grep, { desc = "fzf patterns" })

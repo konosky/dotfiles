@@ -24,6 +24,28 @@ return {
 						return
 					end
 					require("lspconfig")[server_name].setup({})
+
+					local default_handler = vim.lsp.handlers["textDocument/publishDiagnostics"]
+					vim.lsp.handlers["textDocument/publishDiagnostics"] = function(err, result, ctx, config)
+						default_handler(err, result, ctx, config)
+
+						local diagnostics = result.diagnostics
+						local bufnr = vim.uri_to_bufnr(result.uri)
+
+						local qflist = {}
+						for _, diagnostic in ipairs(diagnostics) do
+							local start = diagnostic.range.start
+							table.insert(qflist, {
+								bufnr = bufnr,
+								lnum = start.line + 1,
+								col = start.character + 1,
+								text = diagnostic.message,
+								type = diagnostic.severity,
+							})
+						end
+
+						vim.fn.setqflist(qflist, "r")
+					end
 				end,
 			})
 		end,
