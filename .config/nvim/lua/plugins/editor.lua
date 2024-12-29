@@ -387,4 +387,8 @@ return {
 		},
 		opts = {},
 	},
+	{
+		"MeanderingProgrammer/render-markdown.nvim",
+		opts = {},
+	},
 }
