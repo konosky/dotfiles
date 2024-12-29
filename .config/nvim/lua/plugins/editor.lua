@@ -380,4 +380,11 @@ return {
 			auto_display = true,
 		},
 	},
+	{
+		"3rd/diagram.nvim",
+		dependencies = {
+			"3rd/image.nvim",
+		},
+		opts = {},
+	},
 }
