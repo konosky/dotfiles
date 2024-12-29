@@ -27,6 +27,10 @@ local function get_player_text()
 end
 
 local function workspace_text_option(...)
+	if not ... then
+		return ""
+	end
+
 	if get_playerctl_status() == "" then
 		return ...
 	end
