@@ -5,6 +5,7 @@ return {
 		build = ":UpdateRemotePlugins",
 		init = function()
 			vim.g.molten_image_provider = "image.nvim"
+			vim.g.molten_virt_text_output = true
 		end,
 	},
 	{
