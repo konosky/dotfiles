@@ -49,3 +49,5 @@ alias l=ls
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+. "/home/konosuke/.deno/env"
+source /home/konosuke/.local/share/bash-completion/completions/deno.bash
