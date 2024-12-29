@@ -374,4 +374,10 @@ return {
 		"3rd/image.nvim",
 		opts = {},
 	},
+	{
+		"edluffy/hologram.nvim",
+		opts = {
+			auto_display = true,
+		},
+	},
 }
