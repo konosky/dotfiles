@@ -197,6 +197,24 @@ return {
 			{ "<leader>L", "<Cmd>Lazy<CR>", desc = "Lazy" },
 
 			{ "<leader>M", "<Cmd>Mason<CR>", desc = "Mason" },
+
+			{ "<Leader>c", group = "QuickFix" },
+
+			{
+				"<Leader>ct",
+				function()
+					local windows = vim.fn.getwininfo()
+					for _, window in pairs(windows) do
+						if window.quickfix == 1 then
+							vim.cmd("cclose")
+							return
+						end
+					end
+
+					vim.cmd("copen")
+				end,
+				desc = "Toggle",
+			},
 		},
 	},
 	{
@@ -347,5 +365,9 @@ return {
 		keys = {
 			{ "<Leader>r", "<Cmd>Jaq<CR>", desc = "Run" },
 		},
+	},
+	{
+		"kevinhwang91/nvim-bqf",
+		ft = "qf",
 	},
 }
