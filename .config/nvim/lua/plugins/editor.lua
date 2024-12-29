@@ -370,4 +370,8 @@ return {
 		"kevinhwang91/nvim-bqf",
 		ft = "qf",
 	},
+	{
+		"3rd/image.nvim",
+		opts = {},
+	},
 }
