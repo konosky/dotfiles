@@ -113,6 +113,9 @@ return {
 							vim.cmd("cd " .. selected[1])
 						end,
 					},
+					fzf_opts = {
+						["--preview"] = "git -C {} graph --color always --no-pager",
+					},
 				})
 			end, { desc = "fzf projects" })
 		end,
