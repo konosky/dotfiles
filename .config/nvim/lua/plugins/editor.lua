@@ -230,6 +230,7 @@ return {
 		opts = {
 			formatters_by_ft = {
 				cs = { "csharpier" },
+				javascript = { "biome" },
 				lua = { "stylua" },
 				python = { "black" },
 			},

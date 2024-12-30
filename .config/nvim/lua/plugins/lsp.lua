@@ -119,6 +119,7 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		opts = {
 			ensure_installed = {
+				"biome",
 				"black",
 				"csharp-language-server",
 				"csharpier",
