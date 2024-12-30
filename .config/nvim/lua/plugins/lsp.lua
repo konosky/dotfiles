@@ -78,10 +78,7 @@ return {
 				end,
 				window = {},
 				mapping = cmp.mapping.preset.insert({
-					["<C-b>"] = cmp.mapping.scroll_docs(-4),
-					["<C-f>"] = cmp.mapping.scroll_docs(4),
 					["<C-Space>"] = cmp.mapping.complete(),
-					["<C-e>"] = cmp.mapping.abort(),
 					["<Tab>"] = vim.schedule_wrap(function(fallback)
 						if cmp.visible() and has_words_before() then
 							cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
