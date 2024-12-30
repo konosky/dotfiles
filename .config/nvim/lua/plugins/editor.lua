@@ -429,4 +429,15 @@ return {
 	{
 		"sheerun/vim-polyglot",
 	},
+	{
+		"abecodes/tabout.nvim",
+		lazy = false,
+		opts = {},
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+			"hrsh7th/nvim-cmp",
+		},
+		event = "InsertCharPre",
+		priority = 1000,
+	},
 }
