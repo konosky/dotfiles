@@ -114,7 +114,7 @@ return {
 						end,
 					},
 					fzf_opts = {
-						["--preview"] = "git -C {} graph --color always --no-pager",
+						["--preview"] = "git -C {} graph -n 100 --color always --no-pager",
 					},
 				})
 			end, { desc = "fzf projects" })
