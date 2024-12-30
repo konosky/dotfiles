@@ -85,6 +85,7 @@ return {
 							fallback()
 						end
 					end),
+					["<CR>"] = cmp.mapping.confirm({ select = false }),
 				}),
 				sources = cmp.config.sources({
 					{ name = "copilot" },
