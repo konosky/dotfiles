@@ -51,3 +51,17 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 . "/home/konosuke/.deno/env"
 source /home/konosuke/.local/share/bash-completion/completions/deno.bash
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/konosuke/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/konosuke/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
