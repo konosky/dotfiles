@@ -105,6 +105,16 @@ return {
 			vim.keymap.set("n", "<Leader>ft", require("fzf-lua").tabs, { desc = "fzf tabs" })
 			vim.keymap.set("n", "<Leader>fp", require("fzf-lua").live_grep, { desc = "fzf patterns" })
 			vim.keymap.set("n", "<Leader>fs", require("fzf-lua").lsp_workspace_symbols, { desc = "fzf symbols" })
+
+			vim.keymap.set("n", "<C-p>", function()
+				require("fzf-lua").fzf_exec("ghq list --full-path", {
+					actions = {
+						["default"] = function(selected, opts)
+							vim.cmd("cd " .. selected[1])
+						end,
+					},
+				})
+			end, { desc = "fzf projects" })
 		end,
 	},
 	{
