@@ -401,4 +401,9 @@ return {
 		"MeanderingProgrammer/render-markdown.nvim",
 		opts = {},
 	},
+	{
+		"https://codeberg.org/esensar/nvim-dev-container",
+		dependencies = "nvim-treesitter/nvim-treesitter",
+		opts = {},
+	},
 }
