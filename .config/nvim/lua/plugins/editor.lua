@@ -370,6 +370,7 @@ return {
 					vim = "source %",
 				},
 				external = {
+					javascript = "node %",
 					python = "python3 %",
 					go = "go run %",
 				},
