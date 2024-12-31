@@ -44,6 +44,7 @@ alias ps=procs
 alias vi=nvim
 alias rm=trash
 
+alias e="${EDITOR}"
 alias g=git
 alias l=ls
 . "$HOME/.cargo/env"
