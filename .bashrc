@@ -19,6 +19,8 @@ export PATH="${HOME}/.local/bin:${PATH}"
 eval "$(zoxide init bash)"
 eval "$(mcfly init bash)"
 export PATH="${HOME}/.dotnet/tools:${PATH}"
+export VISUAL=nvim
+export EDITOR="${VISUAL}"
 
 # Functions
 cpfast() { mkdir "$2" && find "$1" -type d | cpio -p "$2" && find "$1" ! -type d | split --filter="cpio -p '$2'" -n "r/$(nproc)" -u; }
