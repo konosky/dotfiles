@@ -47,6 +47,9 @@ alias rm=trash
 alias e="${EDITOR}"
 alias g=git
 alias l=ls
+
+alias la='ls -a'
+alias ll='la -l'
 . "$HOME/.cargo/env"
 
 # bun
