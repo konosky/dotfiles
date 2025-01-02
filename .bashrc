@@ -48,6 +48,8 @@ alias e="${EDITOR}"
 alias g=git
 alias l=ls
 
+alias gi='git init'
+
 alias la='ls -a'
 alias ll='la -l'
 . "$HOME/.cargo/env"
