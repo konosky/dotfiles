@@ -246,6 +246,7 @@ return {
 				javascript = { "biome" },
 				lua = { "stylua" },
 				python = { "black" },
+				yaml = { "yamlfmt" },
 			},
 			format_on_save = {
 				timeout_ms = 500,
