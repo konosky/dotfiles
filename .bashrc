@@ -52,6 +52,8 @@ alias gi='git init'
 
 alias la='ls -a'
 alias ll='la -l'
+
+alias mkdir='mkdir -p'
 . "$HOME/.cargo/env"
 
 # bun
