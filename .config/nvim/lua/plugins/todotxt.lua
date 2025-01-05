@@ -1,6 +1,8 @@
 return {
 	{
-		"phrmendes/todotxt.nvim",
+		--- "phrmendes/todotxt.nvim",
+		"konosky/todotxt.nvim",
+		branch = "bugfix/cant-open-file",
 		dependencies = { "nvim-treesitter/nvim-treesitter" },
 		config = function()
 			require("todotxt").setup({
