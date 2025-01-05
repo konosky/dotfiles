@@ -15,7 +15,7 @@ return {
 	},
 	{
 		-- "GCBallesteros/NotebookNavigator.nvim",
-		"konosuke-sakai/NotebookNavigator.nvim",
+		"konosky/NotebookNavigator.nvim",
 		branch = "bugfix/remove-trailing-marker",
 		keys = {
 			{
