@@ -42,6 +42,7 @@ alias du=dust
 alias sed=sd
 alias ps=procs
 alias vi=nvim
+alias vim=nvim
 alias rm=trash
 
 alias e="${EDITOR}"
