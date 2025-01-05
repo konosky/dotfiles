@@ -36,6 +36,14 @@ return {
 
 			opts.desc = "Move to done.txt"
 			vim.keymap.set("n", "<leader>.d", require("todotxt").move_done_tasks, opts)
+
+			vim.api.nvim_create_autocmd("BufRead", {
+				group = vim.api.nvim_create_augroup("todotxt_config", { clear = true }),
+				pattern = { "todo.txt", "done.txt" },
+				callback = function()
+					vim.bo.filetype = "todotxt"
+				end,
+			})
 		end,
 	},
 }
