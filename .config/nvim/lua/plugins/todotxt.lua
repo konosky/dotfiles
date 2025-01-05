@@ -4,8 +4,8 @@ return {
 		dependencies = { "nvim-treesitter/nvim-treesitter" },
 		config = function()
 			require("todotxt").setup({
-				todotxt = "~/Documents/todo.txt",
-				donetxt = "~/Documents/done.txt",
+				todotxt = vim.fn.expand("~/Documents/todo.txt"),
+				donetxt = vim.fn.expand("~/Documents/done.txt"),
 			})
 
 			local opts = { noremap = true }
