@@ -441,4 +441,10 @@ return {
 		event = "InsertCharPre",
 		priority = 1000,
 	},
+	{
+		"kylechui/nvim-surround",
+		version = "*",
+		event = "VeryLazy",
+		opts = {},
+	},
 }
