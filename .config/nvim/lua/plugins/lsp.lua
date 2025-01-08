@@ -22,6 +22,14 @@ return {
 							},
 						})
 						return
+					elseif server_name == "denols" then
+						require("lspconfig").denols.setup({
+							root_dir = require("lspconfig").util.root_pattern("deno.json"),
+						})
+					elseif server_name == "biome" then
+						require("lspconfig").biome.setup({
+							root_dir = require("lspconfig").util.root_pattern("package.json"),
+						})
 					end
 					require("lspconfig")[server_name].setup({})
 
@@ -135,6 +143,7 @@ return {
 				"black",
 				"csharp-language-server",
 				"csharpier",
+				"denols",
 				"dockerfile-language-server",
 				"emmet-language-server",
 				"hadolint",
