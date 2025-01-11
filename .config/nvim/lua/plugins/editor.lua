@@ -452,4 +452,8 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = {},
 	},
+	{
+		"j-hui/fidget.nvim",
+		opts = {},
+	},
 }
