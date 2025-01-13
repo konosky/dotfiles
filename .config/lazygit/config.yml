@@ -7,3 +7,7 @@ customCommands:
     context: files
     command: env OCO_GITPUSH=false oco --yes
     subprocess: true
+  - key: '<c-p>'
+    context: 'files'
+    command: 'git ls-files | fzf --preview="bat --color always {}" | xargs -r nvim'
+    subprocess: true
