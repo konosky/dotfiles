@@ -483,4 +483,7 @@ return {
 			vim.api.nvim_set_keymap("n", "<Leader>l", "<Cmd>noh<CR>", kopts)
 		end,
 	},
+	{
+		"https://github.com/kana/vim-textobj-user",
+	},
 }
