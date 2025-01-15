@@ -486,4 +486,7 @@ return {
 	{
 		"https://github.com/kana/vim-textobj-user",
 	},
+	{
+		"https://github.com/kana/vim-operator-user",
+	},
 }
