@@ -489,4 +489,8 @@ return {
 	{
 		"https://github.com/kana/vim-operator-user",
 	},
+	{
+		"numToStr/Comment.nvim",
+		opts = {},
+	},
 }
